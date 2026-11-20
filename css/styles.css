@@ -1,0 +1,153 @@
+body{
+  background-color: black;
+  color: black;
+  line-height: 1.5;
+}
+.header{
+  display: flex;
+  align-items: center;
+  background-color: #334256;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin: 8px;
+}
+.logo{
+  letter-spacing: 1px;
+}
+.navegacion{
+  display: flex;
+  gap: 20px;
+}
+.navegacion a{
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.hero{
+  background-color: #dbebfe;
+  color: #2563ec;
+  text-align: center;
+  padding: 40px 24px;
+  margin: 8px;
+  border-radius: 8px;
+}
+.hero p{
+  margin: 10px 0 18px;
+  color: blue;
+}
+
+.btn-cta{
+  display: inline-block;
+  background-color: #2563ec;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.cartas{
+  margin: 8px;
+}
+
+.caja-carta{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.tabla-carta{
+  display: none;
+}
+
+.carta{
+  background-color: #dcfce7;
+  color: green;
+  text-align: center;
+  padding: 24px 16px;
+  border-radius: 8px;
+}
+
+.carta p{
+  margin-top: 6px;
+  font-size: 14px;
+}
+.about{
+  background-color: #f3e8ff;
+  color: darkorchid;
+  text-align: center;
+  padding: 28px 20px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.about-caja{
+  display: none;
+  background-color: #f3e8ff;
+  padding: 28px;
+  border-radius: 8px;
+  margin: 14px auto;
+}
+
+.cta-s{
+  background-color: #fff4c7;
+  color: brown;
+  text-align: center;
+  padding: 24px 20px;
+  margin: 8px;
+  border-radius: 8px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color: #334256;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 8px;
+  border-radius: 8px;
+  gap: 4px;
+}
+.img{
+    display: none;
+}
+@media (max-width: 1024px){
+  .navegacion{
+    display: none;
+  }
+
+  .menu-btn{
+    display: block;
+  }
+
+  .caja-carta{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tabla-carta{
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .caja-carta{
+    grid-template-columns: 1fr;
+  }
+  .tabla-carta{
+    display: none;
+  }
+  .about-caja{
+    display: block;
+  }
+  .btn-cta{
+    display: block;
+    width: 100%;
+  }
+  .img{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 12px auto;
+    border-radius: 8px;
+  }
+}
